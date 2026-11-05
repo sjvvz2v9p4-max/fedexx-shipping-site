@@ -1,0 +1,10 @@
+{
+  "name": "fedexx-shipping-system",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Fedexx internal shipment registration and public tracking prototype",
+  "dependencies": {
+    "@netlify/blobs": "^8.2.0"
+  }
+}

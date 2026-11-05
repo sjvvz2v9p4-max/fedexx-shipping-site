@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Fedexx worldwide shipment support and tracking.">
+<title>Fedexx | Worldwide Express</title><link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/"><span class="brand-mark">F</span><span>FEDEXX<small>WORLDWIDE EXPRESS</small></span></a>
+<nav><a href="#services" data-i18n="services">Services</a><a href="#about" data-i18n="about">About</a><a href="/tracking.html" data-i18n="track">Track shipment</a><a class="nav-admin" href="/admin.html">Staff</a></nav>
+<div class="tools"><select id="language" aria-label="Language"><option value="en">EN</option><option value="es">ES</option><option value="fr">FR</option><option value="pt">PT</option></select><a class="button small" href="/tracking.html" data-i18n="trackNow">Track now</a></div>
+</header>
+<main>
+<section class="hero"><div class="hero-copy"><div class="eyebrow" data-i18n="eyebrow">DELIVERING WITH CARE</div><h1 data-i18n="heroTitle">Your world.<br><em>Connected.</em></h1><p data-i18n="heroText">A simpler way to register, follow and manage shipment records — with clear updates at every step.</p>
+<form class="track-inline" id="quick-track"><input id="quick-code" placeholder="Enter your tracking number" aria-label="Tracking number" required><button class="button" data-i18n="trackPackage">Track package</button></form>
+<div class="hero-note"><span class="pulse"></span><span data-i18n="heroNote">Shipment updates are provided by our team.</span></div></div>
+<div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="parcel"><div class="parcel-tape"></div><div class="parcel-label">FEDEXX<br><small>WORLDWIDE</small></div></div><div class="route route-a"></div><div class="route route-b"></div><div class="pin pin-a">✦</div><div class="pin pin-b">✦</div><div class="art-caption">MOVE WITH CONFIDENCE <span>↗</span></div></div></section>
+<section class="stats"><div><strong>01</strong><span>ONE PLACE TO TRACK</span></div><div><strong>24/7</strong><span>ONLINE TRACKING ACCESS</span></div><div><strong>04</strong><span>LANGUAGE OPTIONS</span></div></section>
+<section class="section" id="services"><div class="section-heading"><div class="eyebrow">WHAT WE OFFER</div><h2 data-i18n="servicesTitle">Shipment support, made simple.</h2><p data-i18n="servicesText">Tools to help customers and staff keep shipment information organised.</p></div><div class="service-grid"><article class="service-card"><div class="service-icon">↗</div><h3 data-i18n="service1">Shipment tracking</h3><p data-i18n="service1Text">Check the latest status and public update history using your tracking code.</p></article><article class="service-card"><div class="service-icon">▣</div><h3 data-i18n="service2">Shipment records</h3><p data-i18n="service2Text">Staff can register packages and maintain clear shipment records.</p></article><article class="service-card"><div class="service-icon">◎</div><h3 data-i18n="service3">Helpful updates</h3><p data-i18n="service3Text">See the latest public location, estimated date and verified notes.</p></article></div></section>
+<section class="banner" id="about"><div><div class="eyebrow">FEDEXX WORLDWIDE EXPRESS</div><h2 data-i18n="bannerTitle">Clarity at every step.</h2><p data-i18n="bannerText">We believe shipment information should be easy to access and understand.</p></div><a class="button light" href="/tracking.html" data-i18n="trackShipment">Track a shipment <span>→</span></a></section>
+</main>
+<footer><a class="brand footer-brand" href="/"><span class="brand-mark">F</span><span>FEDEXX<small>WORLDWIDE EXPRESS</small></span></a><p>© <span id="year"></span> Fedexx Worldwide Express. All rights reserved.</p><small class="disclaimer">Independent shipment-record prototype. Not affiliated with FedEx or another carrier.</small></footer>
+<script src="/assets/app.js"></script><script>document.getElementById('quick-track').addEventListener('submit',e=>{e.preventDefault();location.href='/tracking.html?code='+encodeURIComponent(document.getElementById('quick-code').value.trim())});</script>
+</body></html>
